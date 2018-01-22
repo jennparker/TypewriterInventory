@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Typewriter Love</string>
+
+    <!--Navigation Drawer-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Typewriter Love</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_resources_subtitle">Resources</string>
+    <string name="nav_books">Books</string>
+    <string name="nav_movies">Movies</string>
+    <string name="nav_websites">Websites</string>
+    <string name="kolibri_groma_title">Kolibri Groma</string>
+    <string name="royal_aristocrat_title">Royal Aristocrat</string>
+    <string name="underwood_universal_title">Underwood Universal</string>
+    <string name="select_a_machine_subtitle">Select a machine</string>
+    <string name="nav_subtitle_text">For the love of typewriters</string>
+
+    <!--Settings-->
+    <string name="action_settings">Settings</string>
+
+    <!--Splash Screen-->
+    <string name="title_activity_splash_screen">Typewriter Love</string>
+    <string name="dummy_content">FOR THE LOVE OF TYPEWRITERS</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="splash_button">Let\'s Go!</string>
+    <string name="main_content_text">Swipe to the right</string>
+</resources>
