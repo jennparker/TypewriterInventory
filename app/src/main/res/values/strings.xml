@@ -21,7 +21,7 @@
 
     <!--Splash Screen-->
     <string name="title_activity_splash_screen">Typewriter Love</string>
-    <string name="dummy_content">FOR THE LOVE OF TYPEWRITERS</string>
+    <string name="typewriter_text">for the love of type writers</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="splash_button">Let\'s Go!</string>

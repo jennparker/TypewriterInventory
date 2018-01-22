@@ -5,4 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="black_overlay">#66000000</color>
+
+    <color name="splash_background">#ffffff</color>
+    <color name="type_font_color">#000000</color>
 </resources>

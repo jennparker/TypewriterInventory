@@ -16,7 +16,7 @@ import android.widget.TextView;
  * status bar and navigation/system bar) with user interaction.
  */
 public class SplashScreen extends AppCompatActivity {
-
+//TODO Animate the text for the splash screen
 
     /**
      * Whether or not the system UI should be auto-hidden after
