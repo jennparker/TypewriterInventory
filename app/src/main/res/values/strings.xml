@@ -4,7 +4,6 @@
     <!--Navigation Drawer-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Typewriter Love</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="nav_resources_subtitle">Resources</string>
     <string name="nav_books">Books</string>
@@ -18,12 +17,32 @@
 
     <!--Settings-->
     <string name="action_settings">Settings</string>
+    <string name="action_credits">Credits</string>
 
     <!--Splash Screen-->
-    <string name="title_activity_splash_screen">Typewriter Love</string>
     <string name="typewriter_text">for the love of type writers</string>
 
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="splash_button">Let\'s Go!</string>
-    <string name="main_content_text">Swipe to the right</string>
+    <string name="main_content_text">Welcome to my little slice of typewriter heaven. This is an app to help me inventory my typewriters - yes, it\'s THAT big of a problem. Swipe right to open the menu drawer and see a list of my machines and some other typewriter-related resources I\'ve compiled in my wanderings.</string>
+
+    <string name="sample_paragraph">Bacon ipsum dolor amet shankle pork loin kielbasa biltong, ball tip rump pancetta filet mignon turkey doner ham. Flank ham hock beef ribs pork chop ham pastrami chicken pork loin pancetta hamburger meatball corned beef landjaeger.</string>
+
+    <!--Description Page-->
+    <string name="groma_title">Kolibri Groma</string>
+    <string name="royal_title">Royal Aristocrat</string>
+    <string name="underwood_title">Underwood Universal</string>
+    <string name="books_title">Books about typewriters</string>
+    <string name="movies_title">Movies about typewriters</string>
+    <string name="websites_title">Websites about typewriters</string>
+
+    <string name="groma_content"></string>
+    <string name="royal_content"></string>
+    <string name="underwood_content"></string>
+    <string name="books_content"></string>
+    <string name="movies_content">California Typewriter</string>
+    <string name="websites_content"></string>
+    <string name="title_activity_credits">CreditsActivity</string>
+    <string name="photo_credits_text">Photo Credits</string>
+    <string name="splash_hint_text">Tap a typewriter key to get started</string>
+
 </resources>

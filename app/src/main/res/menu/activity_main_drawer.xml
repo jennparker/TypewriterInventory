@@ -8,15 +8,15 @@
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/nav_kolibri_groma"
-                    android:icon="@drawable/ic_menu_camera"
+                    android:icon="@drawable/ic_typewriter_black"
                     android:title="@string/kolibri_groma_title" />
                 <item
                     android:id="@+id/nav_royal_aristocrat"
-                    android:icon="@drawable/ic_menu_gallery"
+                    android:icon="@drawable/ic_typewriter_black"
                     android:title="@string/royal_aristocrat_title" />
                 <item
                     android:id="@+id/nav_underwood_universal"
-                    android:icon="@drawable/ic_menu_slideshow"
+                    android:icon="@drawable/ic_typewriter_black"
                     android:title="@string/underwood_universal_title" />
             </group>
         </menu>
@@ -26,15 +26,15 @@
         <menu>
             <item
                 android:id="@+id/nav_books"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_bookmark"
                 android:title="@string/nav_books" />
             <item
                 android:id="@+id/nav_movies"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_movie"
                 android:title="@string/nav_movies" />
             <item
                 android:id="@+id/nav_websites"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_computer"
                 android:title="@string/nav_websites" />
         </menu>
     </item>

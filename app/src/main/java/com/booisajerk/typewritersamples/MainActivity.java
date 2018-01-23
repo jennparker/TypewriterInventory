@@ -1,5 +1,8 @@
 package com.booisajerk.typewritersamples;
 
+import android.content.Intent;
+import android.graphics.Typeface;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.view.View;
@@ -11,6 +14,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
+
+//TODO find cool launcher icon
+//TODO get images for all typewriters
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -22,6 +33,11 @@ public class MainActivity extends AppCompatActivity
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        TextView welcomeText = (TextView) findViewById(R.id.main_content_text);
+
+        Typeface typewriterFont = Typeface.createFromAsset(getAssets(), "fonts/lc_smith_5_typewriter.ttf");
+        welcomeText.setTypeface(typewriterFont);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -61,32 +77,41 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
             return true;
         }
+        if (id == R.id.action_credits) {
+            return true;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+
+        String navigationId = "navigationId";
+      //  int itemId = 0;
+
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+//
+//        if (id == R.id.nav_kolibri_groma) {
+//            itemId = R.id.nav_kolibri_groma;
+//        } else if (id == R.id.nav_royal_aristocrat) {
+//            itemId = R.id.nav_royal_aristocrat;
+//        } else if (id == R.id.nav_underwood_universal) {
+//            itemId = R.id.nav_underwood_universal;
+//        } else if (id == R.id.nav_books) {
+//            itemId = R.id.nav_books;
+//        } else if (id == R.id.nav_movies) {
+//            itemId = R.id.nav_movies;
+//        } else if (id == R.id.nav_websites) {
+//            itemId = R.id.nav_websites;
+//        }
 
-        if (id == R.id.nav_kolibri_groma) {
-            // Handle the camera action
-        } else if (id == R.id.nav_royal_aristocrat) {
-
-        } else if (id == R.id.nav_underwood_universal) {
-
-        } else if (id == R.id.nav_books) {
-            //TODO create books page
-            //TODO navigate to books page
-
-        } else if (id == R.id.nav_movies) {
-            //TODO create movies page
-            //TODO navigate to movies page
-        } else if (id == R.id.nav_websites) {
-            //TODO create websites page
-            //TODO navigate to websites page
-        }
+        //Add the id to an intent to pass to TypewriterDetailActivity
+        Intent typewriterDetailActivityIntent = new Intent(MainActivity.this, TypewriterDetailActivity.class);
+        typewriterDetailActivityIntent.putExtra(navigationId, id);
+        startActivity(typewriterDetailActivityIntent);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
