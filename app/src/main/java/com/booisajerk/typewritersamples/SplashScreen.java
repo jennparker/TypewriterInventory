@@ -26,7 +26,7 @@ public class SplashScreen extends AppCompatActivity {
 
         Typeface typewriterFont = Typeface.createFromAsset(getAssets(), "fonts/lc_smith_5_typewriter.ttf");
         splashHint.setTypeface(typewriterFont);
-        //TODO add ic_typewriter_black animation to this text
+        //TODO add animation to this text
 
         splashText.setOnClickListener(new View.OnClickListener() {
             @Override

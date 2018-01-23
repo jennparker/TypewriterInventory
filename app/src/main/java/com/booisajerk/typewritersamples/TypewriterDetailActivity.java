@@ -1,6 +1,7 @@
 package com.booisajerk.typewritersamples;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -26,9 +27,14 @@ public class TypewriterDetailActivity extends AppCompatActivity {
         intent.getExtras();
 
         //TODO get the intent from MainActivity
+        Typeface typewriterFont = Typeface.createFromAsset(getAssets(), "fonts/lc_smith_5_typewriter.ttf");
 
         TextView detailTitle = (TextView) findViewById(R.id.detail_title);
+        detailTitle.setTypeface(typewriterFont);
+
         TextView detailText = (TextView) findViewById(R.id.detail_text);
+        detailText.setTypeface(typewriterFont);
+
         ImageView detailImage = (ImageView) findViewById(R.id.detail_image);
 
         //TODO add case statement

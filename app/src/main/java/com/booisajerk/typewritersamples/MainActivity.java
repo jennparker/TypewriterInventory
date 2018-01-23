@@ -19,9 +19,7 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-//TODO find cool launcher icon
 //TODO get images for all typewriters
-
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
