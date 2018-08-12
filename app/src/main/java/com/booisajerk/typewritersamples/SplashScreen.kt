@@ -3,11 +3,9 @@ package com.booisajerk.typewritersamples
 import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.widget.TextView
 import kotlinx.android.synthetic.main.splash_screen.*
 
-class SplashScreen : AppCompatActivity() {
+class SplashScreen : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

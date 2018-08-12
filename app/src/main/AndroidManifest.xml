@@ -10,8 +10,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -29,12 +28,11 @@
         </activity>
         <activity
             android:name=".TypewriterDetailActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/app_name" />
         <activity
             android:name=".CreditsActivity"
-            android:label="@string/title_activity_credits"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:label="@string/title_activity_credits" />
+        <activity android:name=".BaseActivity" />
     </application>
 
 </manifest>
