@@ -28,20 +28,17 @@
     <string name="sample_paragraph">Bacon ipsum dolor amet shankle pork loin kielbasa biltong, ball tip rump pancetta filet mignon turkey doner ham. Flank ham hock beef ribs pork chop ham pastrami chicken pork loin pancetta hamburger meatball corned beef landjaeger.</string>
 
     <!--Description Page-->
-    <string name="groma_title">Kolibri Groma</string>
-    <string name="royal_title">Royal Aristocrat</string>
-    <string name="underwood_title">Underwood Universal</string>
     <string name="books_title">Books about typewriters</string>
     <string name="movies_title">Movies about typewriters</string>
     <string name="websites_title">Websites about typewriters</string>
 
-    <string name="groma_content"></string>
-    <string name="royal_content"></string>
-    <string name="underwood_content"></string>
-    <string name="books_content"></string>
+    <string name="kolibri_groma_content">Add Kolibri Groma content</string>
+    <string name="royal_aristocrat_content">Add Royal Aristrcrat content</string>
+    <string name="underwood_universal_content">Add Underwood Universal content</string>
+    <string name="books_content">Add book content</string>
     <string name="movies_content">California Typewriter</string>
-    <string name="websites_content"></string>
-    <string name="title_activity_credits">CreditsActivity</string>
+    <string name="websites_content">Add website content</string>
+    <string name="title_activity_credits">Credits</string>
     <string name="photo_credits_text">Photo Credits</string>
     <string name="splash_hint_text">Tap a typewriter key to get started</string>
 

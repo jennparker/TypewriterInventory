@@ -16,10 +16,9 @@ class SplashScreen : BaseActivity() {
 
         val typewriterFont = Typeface.createFromAsset(assets, "fonts/lc_smith_5_typewriter.ttf")
         splash_hint.typeface = typewriterFont
-        //TODO add animation to this text
 
         splash_text.setOnClickListener {
-            val intent = Intent(this@SplashScreen, MainActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }

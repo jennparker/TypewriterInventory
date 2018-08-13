@@ -12,7 +12,6 @@ import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
-//TODO get images for all typewriters
 
 class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -44,29 +43,8 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
-        val navigationId = "navigationId"
-        //  int itemId = 0;
-
-        // Handle navigation view item clicks here.
-        val id = item.itemId
-        //
-        //        if (id == R.id.nav_kolibri_groma) {
-        //            itemId = R.id.nav_kolibri_groma;
-        //        } else if (id == R.id.nav_royal_aristocrat) {
-        //            itemId = R.id.nav_royal_aristocrat;
-        //        } else if (id == R.id.nav_underwood_universal) {
-        //            itemId = R.id.nav_underwood_universal;
-        //        } else if (id == R.id.nav_books) {
-        //            itemId = R.id.nav_books;
-        //        } else if (id == R.id.nav_movies) {
-        //            itemId = R.id.nav_movies;
-        //        } else if (id == R.id.nav_websites) {
-        //            itemId = R.id.nav_websites;
-        //        }
-
-        //Add the id to an intent to pass to TypewriterDetailActivity
-        val typewriterDetailActivityIntent = Intent(this@MainActivity, TypewriterDetailActivity::class.java)
-        typewriterDetailActivityIntent.putExtra(navigationId, id)
+        val typewriterDetailActivityIntent = Intent(this, TypewriterDetailActivity::class.java)
+        typewriterDetailActivityIntent.putExtra(Constants.NAVIGATION_ID, item.itemId)
         startActivity(typewriterDetailActivityIntent)
 
         drawer_layout.closeDrawer(GravityCompat.START)
