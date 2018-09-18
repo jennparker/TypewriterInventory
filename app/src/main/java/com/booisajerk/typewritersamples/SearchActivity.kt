@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit
 class SearchActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
     private val TAG = "Parker" + SearchActivity::class.qualifiedName
 
-    protected lateinit var typewriterSearchEngine: TypewriterSearchEngine
+    private lateinit var typewriterSearchEngine: TypewriterSearchEngine
     private val typewriterAdapter = TypewriterAdapter()
     private lateinit var disposable: Disposable
 
@@ -129,15 +129,15 @@ class SearchActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedLi
                 .debounce(1000, TimeUnit.MILLISECONDS)
     }
 
-    protected fun showProgress() {
+    private fun showProgress() {
         progressBar.visibility = View.VISIBLE
     }
 
-    protected fun hideProgress() {
+    private fun hideProgress() {
         progressBar.visibility = View.GONE
     }
 
-    protected fun showResult(result: List<String>) {
+    private fun showResult(result: List<String>) {
         if (result.isEmpty()) {
             Toast.makeText(this, R.string.nothing_found, Toast.LENGTH_SHORT).show()
         }

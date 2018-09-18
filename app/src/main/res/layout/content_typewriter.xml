@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="32dp"
+    android:layout_margin="@dimen/layout_margin"
     tools:context=".TypewriterDetailActivity"
     tools:showIn="@layout/activity_typewriter">
 
@@ -12,22 +12,22 @@
         android:id="@+id/detail_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="12dp"
-        android:text="Sample Title"
+        android:paddingBottom="@dimen/padding"
         android:textAlignment="center"
-        android:textSize="24dp" />
+        android:textSize="@dimen/title_text_size" />
 
     <ImageView
         android:id="@+id/detail_image"
+        android:contentDescription="@string/typewriter_image_content_description"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/details_layout_height"
         android:background="@color/type_font_color"
         app:layout_constraintTop_toBottomOf="@id/detail_title" />
 
     <TextView
         android:id="@+id/detail_text"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/details_layout_height"
         android:gravity="center_vertical"
         android:text="@string/sample_paragraph"
         android:textAlignment="center"
