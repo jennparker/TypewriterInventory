@@ -2,10 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
+    <item android:title="@string/search">
+        <menu>
+            <group android:checkableBehavior="single"
+                android:id="@+id/search_group">
+            <item
+                android:id="@+id/search"
+                android:icon="@android:drawable/ic_menu_search"
+                android:title="@string/search" />
+            </group>
+        </menu>
+    </item>
 
     <item android:title="@string/select_a_machine_subtitle">
         <menu>
-            <group android:checkableBehavior="single">
+            <group android:checkableBehavior="single"
+                android:id="@+id/typewriter_group">
                 <item
                     android:id="@+id/nav_kolibri_groma"
                     android:icon="@drawable/ic_typewriter_black"
@@ -24,6 +36,8 @@
 
     <item android:title="@string/nav_resources_subtitle">
         <menu>
+            <group android:checkableBehavior="single"
+                android:id="@+id/resources_group">
             <item
                 android:id="@+id/nav_books"
                 android:icon="@drawable/ic_bookmark"
@@ -36,6 +50,7 @@
                 android:id="@+id/nav_websites"
                 android:icon="@drawable/ic_computer"
                 android:title="@string/nav_websites" />
+            </group>
         </menu>
     </item>
 

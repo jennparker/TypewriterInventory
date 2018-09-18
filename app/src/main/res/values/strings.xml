@@ -15,6 +15,11 @@
     <string name="select_a_machine_subtitle">Select a machine</string>
     <string name="nav_subtitle_text">For the love of typewriters</string>
 
+    <!--Search-->
+    <string name="search">Search</string>
+    <string name="search_hint">Enter a typewriter</string>
+    <string name="nothing_found">Nothing found</string>
+
     <!--Settings-->
     <string name="action_settings">Settings</string>
     <string name="action_credits">Credits</string>

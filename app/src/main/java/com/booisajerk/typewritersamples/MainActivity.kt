@@ -12,7 +12,6 @@ import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
-
 class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,9 +42,18 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
-        val typewriterDetailActivityIntent = Intent(this, TypewriterDetailActivity::class.java)
-        typewriterDetailActivityIntent.putExtra(Constants.NAVIGATION_ID, item.itemId)
-        startActivity(typewriterDetailActivityIntent)
+        when (item.groupId) {
+            R.id.search_group -> {
+                val searchActivityIntent = Intent(this, SearchActivity::class.java)
+                searchActivityIntent.putExtra(Constants.NAVIGATION_ID, item.itemId)
+                startActivity(searchActivityIntent)
+            }
+            else -> {
+                val typewriterDetailActivityIntent = Intent(this, TypewriterDetailActivity::class.java)
+                typewriterDetailActivityIntent.putExtra(Constants.NAVIGATION_ID, item.itemId)
+                startActivity(typewriterDetailActivityIntent)
+            }
+        }
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true

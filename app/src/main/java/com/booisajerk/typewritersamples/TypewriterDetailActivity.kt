@@ -2,13 +2,17 @@ package com.booisajerk.typewritersamples
 
 import android.graphics.Typeface
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.content_typewriter.*
 
 class TypewriterDetailActivity : BaseActivity() {
+    private val TAG = "Parker" + TypewriterDetailActivity::class.qualifiedName
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_typewriter)
+        Log.d(TAG, "onCreate")
 
         val id: Int = intent.getIntExtra(Constants.NAVIGATION_ID, 0)
 

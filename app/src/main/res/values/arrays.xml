@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="typewriters">
+    <item>Kolibri Groma</item>
+    <item>Underwood Something</item>
+    <item>Royal Universal</item>
+    <item>Something else</item>
+    </string-array>
+</resources>
