@@ -14,4 +14,8 @@
     <dimen name="type_font_text_size">60sp</dimen>
     <dimen name="title_text_size">24sp</dimen>
     <dimen name="main_type_text_size">18sp</dimen>
+
+    <!--Cards-->
+    <dimen name="card_elevation">1dp</dimen>
+    <dimen name="card_corner_radius">0dp</dimen>
 </resources>
