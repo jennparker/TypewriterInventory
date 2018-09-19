@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="typewriters">
-    <item>Kolibri Groma</item>
-    <item>Underwood Something</item>
-    <item>Royal Universal</item>
-    <item>Something else</item>
+    <item>@string/kolibri_groma</item>
+        <item>@string/olivetti_lettera</item>
+        <item>@string/royal_aristocrat</item>
+        <item>@string/royal_aristocrat_two</item>
+        <item>@string/royal_kmg</item>
+        <item>@string/royal_quiet_de_luxe</item>
+        <item>@string/underwood_universal</item>
     </string-array>
 </resources>

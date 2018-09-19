@@ -21,15 +21,32 @@
                 <item
                     android:id="@+id/nav_kolibri_groma"
                     android:icon="@drawable/ic_typewriter_black"
-                    android:title="@string/kolibri_groma_title" />
+                    android:title="@string/kolibri_groma" />
+                <item
+                    android:id="@+id/nav_olivetti_lettera"
+                    android:icon="@drawable/ic_typewriter_black"
+                    android:title="@string/olivetti_lettera" />
                 <item
                     android:id="@+id/nav_royal_aristocrat"
                     android:icon="@drawable/ic_typewriter_black"
-                    android:title="@string/royal_aristocrat_title" />
+                    android:title="@string/royal_aristocrat" />
+                <item
+                    android:id="@+id/nav_royal_aristocrat_two"
+                    android:icon="@drawable/ic_typewriter_black"
+                    android:title="@string/royal_aristocrat_two" />
+                <item
+                    android:id="@+id/nav_royal_kmg"
+                    android:icon="@drawable/ic_typewriter_black"
+                    android:title="@string/royal_kmg" />
+                <item
+                    android:id="@+id/nav_royal_quiet_de_luxe"
+                    android:icon="@drawable/ic_typewriter_black"
+                    android:title="@string/royal_quiet_de_luxe" />
                 <item
                     android:id="@+id/nav_underwood_universal"
                     android:icon="@drawable/ic_typewriter_black"
-                    android:title="@string/underwood_universal_title" />
+                    android:title="@string/underwood_universal" />
+
             </group>
         </menu>
     </item>

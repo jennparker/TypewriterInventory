@@ -1,6 +1,23 @@
 <resources>
     <string name="app_name">Typewriter Love</string>
 
+    <!--Typewriters-->
+    <string name="kolibri_groma">Kolibri Groma</string>
+    <string name="olivetti_lettera">Olivetti Lettera 22</string>
+    <string name="royal_aristocrat">Royal Aristocrat</string>
+    <string name="royal_aristocrat_two">Royal Aristocrat #2</string>
+    <string name="royal_kmg">Royal KMG</string>
+    <string name="royal_quiet_de_luxe">Royal Quiet De Luxe</string>
+    <string name="underwood_universal">Underwood Universal</string>
+
+    <string name="kolibri_groma_content">Add Kolibri Groma content</string>
+    <string name="olivetti_lettera_content">Add Olivetti content</string>
+    <string name="royal_aristocrat_content">Add Royal Aristrcrat content</string>
+    <string name="royal_aristocrat_two_content">Add Royal Aristrcrat two content</string>
+    <string name="royal_kmg_content">Add Royal KMG content</string>
+    <string name="royal_quiet_de_luxe_content">Add Royal Quiet de Luxe content</string>
+    <string name="underwood_universal_content">Add Underwood Universal content</string>
+
     <!--Navigation Drawer-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -9,9 +26,7 @@
     <string name="nav_books">Books</string>
     <string name="nav_movies">Movies</string>
     <string name="nav_websites">Websites</string>
-    <string name="kolibri_groma_title">Kolibri Groma</string>
-    <string name="royal_aristocrat_title">Royal Aristocrat</string>
-    <string name="underwood_universal_title">Underwood Universal</string>
+  
     <string name="select_a_machine_subtitle">Select a machine</string>
     <string name="nav_subtitle_text">For the love of typewriters</string>
 
@@ -30,9 +45,6 @@
     <string name="movies_title">Movies about typewriters</string>
     <string name="websites_title">Websites about typewriters</string>
 
-    <string name="kolibri_groma_content">Add Kolibri Groma content</string>
-    <string name="royal_aristocrat_content">Add Royal Aristrcrat content</string>
-    <string name="underwood_universal_content">Add Underwood Universal content</string>
     <string name="books_content">Add book content</string>
     <string name="movies_content">California Typewriter</string>
     <string name="websites_content">Add website content</string>

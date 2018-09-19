@@ -18,17 +18,37 @@ class TypewriterDetailActivity : BaseActivity() {
 
         when (id) {
             R.id.nav_kolibri_groma -> {
-                detail_title.setText(R.string.kolibri_groma_title)
+                detail_title.setText(R.string.kolibri_groma)
                 // TODO add image detail_image.setImageResource(R.)
                 detail_text.setText(R.string.kolibri_groma_content)
             }
+            R.id.nav_olivetti_lettera -> {
+                detail_title.setText(R.string.olivetti_lettera)
+                // TODO add image detail_image.setImageResource(R.)
+                detail_text.setText(R.string.olivetti_lettera_content)
+            }
             R.id.nav_royal_aristocrat -> {
-                detail_title.setText(R.string.royal_aristocrat_title)
+                detail_title.setText(R.string.royal_aristocrat)
                 // TODO add image detail_image.setImageResource(R.)
                 detail_text.setText(R.string.royal_aristocrat_content)
             }
+            R.id.nav_royal_aristocrat_two -> {
+                detail_title.setText(R.string.royal_aristocrat_two)
+                // TODO add image detail_image.setImageResource(R.)
+                detail_text.setText(R.string.royal_aristocrat_two_content)
+            }
+            R.id.nav_royal_kmg -> {
+                detail_title.setText(R.string.royal_kmg)
+                // TODO add image detail_image.setImageResource(R.)
+                detail_text.setText(R.string.royal_kmg_content)
+            }
+            R.id.nav_royal_quiet_de_luxe -> {
+                detail_title.setText(R.string.royal_quiet_de_luxe)
+                // TODO add image detail_image.setImageResource(R.)
+                detail_text.setText(R.string.royal_quiet_de_luxe_content)
+            }
             R.id.nav_underwood_universal -> {
-                detail_title.setText(R.string.underwood_universal_title)
+                detail_title.setText(R.string.underwood_universal)
                 // TODO add image detail_image.setImageResource(R.)
                 detail_text.setText(R.string.underwood_universal_content)
             }
