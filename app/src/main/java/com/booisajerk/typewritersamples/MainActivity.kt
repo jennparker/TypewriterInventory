@@ -14,12 +14,16 @@ import kotlinx.android.synthetic.main.content_main.*
 class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     lateinit private var staggeredLayoutManager: StaggeredGridLayoutManager
+    lateinit private var adapter: MachineListAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         staggeredLayoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
         list.layoutManager = staggeredLayoutManager
+
+        adapter = MachineListAdapter(this)
+        list.adapter = adapter
     }
 
     override fun onBackPressed() {
