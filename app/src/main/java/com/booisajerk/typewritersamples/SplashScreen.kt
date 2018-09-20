@@ -12,12 +12,12 @@ class SplashScreen : BaseActivity() {
         setContentView(R.layout.splash_screen)
 
         val typewriterButtonFont = Typeface.createFromAsset(assets, "fonts/type_keys.ttf")
-        splash_text.typeface = typewriterButtonFont
+        splashText.typeface = typewriterButtonFont
 
         val typewriterFont = Typeface.createFromAsset(assets, "fonts/lc_smith_5_typewriter.ttf")
-        splash_hint.typeface = typewriterFont
+        splashHint.typeface = typewriterFont
 
-        splash_text.setOnClickListener {
+        splashText.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

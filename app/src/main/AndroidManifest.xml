@@ -27,7 +27,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TypewriterDetailActivity"
+            android:name=".MachineDetailActivity"
             android:label="@string/app_name" />
         <activity android:name=".BaseActivity" />
         <activity android:name=".SearchActivity">

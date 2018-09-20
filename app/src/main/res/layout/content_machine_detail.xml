@@ -4,31 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TypewriterDetailActivity"
-    tools:showIn="@layout/activity_typewriter">
+    tools:context=".MachineDetailActivity"
+    tools:showIn="@layout/activity_machine_detail">
 
     <ImageView
-        android:id="@+id/detail_image"
+        android:id="@+id/detailImage"
         android:contentDescription="@string/typewriter_image_content_description"
         android:layout_width="match_parent"
         android:layout_height="@dimen/details_layout_height"
         android:scaleType="centerCrop" />
 
     <TextView
-        android:id="@+id/detail_title"
+        android:id="@+id/detailTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/padding"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/detail_image"
+        app:layout_constraintTop_toBottomOf="@id/detailImage"
         android:textSize="@dimen/title_text_size" />
 
     <TextView
-        android:id="@+id/detail_text"
+        android:id="@+id/detailText"
         android:layout_width="match_parent"
         android:layout_height="@dimen/details_layout_height"
         android:text="@string/sample_paragraph"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@id/detail_title" />
+        app:layout_constraintTop_toBottomOf="@id/detailTitle" />
 
 </android.support.constraint.ConstraintLayout>

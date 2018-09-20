@@ -18,7 +18,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
     private val onItemClickListener = object : MachineListAdapter.OnItemClickListener {
         override fun onItemClick(view: View, position: Int) {
-            startActivity(TypewriterDetailActivity.detailIntent(this@MainActivity, position))
+            startActivity(MachineDetailActivity.detailIntent(this@MainActivity, position))
         }
     }
 
@@ -34,7 +34,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
     }
 
     override fun onBackPressed() {
-        val drawer = findViewById<View>(R.id.drawer_layout) as DrawerLayout
+        val drawer = findViewById<View>(R.id.drawerLayout) as DrawerLayout
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START)
         } else {
@@ -44,11 +44,11 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
-        val typewriterDetailActivityIntent = Intent(this, TypewriterDetailActivity::class.java)
+        val typewriterDetailActivityIntent = Intent(this, MachineDetailActivity::class.java)
         typewriterDetailActivityIntent.putExtra(Constants.NAVIGATION_ID, item.itemId)
         startActivity(typewriterDetailActivityIntent)
 
-        drawer_layout.closeDrawer(GravityCompat.START)
+        drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
 }
