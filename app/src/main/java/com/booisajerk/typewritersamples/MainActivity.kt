@@ -8,7 +8,6 @@ import android.support.v4.widget.DrawerLayout
 import android.support.v7.widget.StaggeredGridLayoutManager
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -19,7 +18,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
     private val onItemClickListener = object : MachineListAdapter.OnItemClickListener {
         override fun onItemClick(view: View, position: Int) {
-            Toast.makeText(this@MainActivity, "Clicked " + position, Toast.LENGTH_SHORT).show()
+            startActivity(TypewriterDetailActivity.detailIntent(this@MainActivity, position))
         }
     }
 
@@ -44,7 +43,6 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
-
 
         val typewriterDetailActivityIntent = Intent(this, TypewriterDetailActivity::class.java)
         typewriterDetailActivityIntent.putExtra(Constants.NAVIGATION_ID, item.itemId)
