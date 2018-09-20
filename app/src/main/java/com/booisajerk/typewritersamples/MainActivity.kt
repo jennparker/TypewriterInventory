@@ -8,6 +8,7 @@ import android.support.v4.widget.DrawerLayout
 import android.support.v7.widget.StaggeredGridLayoutManager
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -15,6 +16,12 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
     lateinit private var staggeredLayoutManager: StaggeredGridLayoutManager
     lateinit private var adapter: MachineListAdapter
+
+    private val onItemClickListener = object : MachineListAdapter.OnItemClickListener {
+        override fun onItemClick(view: View, position: Int) {
+            Toast.makeText(this@MainActivity, "Clicked " + position, Toast.LENGTH_SHORT).show()
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +31,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
         adapter = MachineListAdapter(this)
         list.adapter = adapter
+        adapter.setOnItemClickListener(onItemClickListener)
     }
 
     override fun onBackPressed() {

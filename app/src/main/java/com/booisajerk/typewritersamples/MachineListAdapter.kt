@@ -2,7 +2,6 @@ package com.booisajerk.typewritersamples
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +9,8 @@ import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.row_machines.view.*
 
 class MachineListAdapter(private var context: Context) : RecyclerView.Adapter<MachineListAdapter.ViewHolder>() {
+
+    lateinit var itemClickListener: OnItemClickListener
 
     override fun getItemCount() = MachineData.machineList().size
 
@@ -25,6 +26,20 @@ class MachineListAdapter(private var context: Context) : RecyclerView.Adapter<Ma
         Picasso.with(context).load(machine.getImageResourceId(context)).into(holder.itemView.machineImage)
     }
 
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
+
+        init {
+            itemView.machineHolder.setOnClickListener(this)
+        }
+
+        override fun onClick(view: View) = itemClickListener.onItemClick(itemView, adapterPosition)
+    }
+
+    interface OnItemClickListener {
+        fun onItemClick(view: View, position: Int)
+    }
+
+    fun setOnItemClickListener(itemClickListener: OnItemClickListener) {
+        this.itemClickListener = itemClickListener
     }
 }

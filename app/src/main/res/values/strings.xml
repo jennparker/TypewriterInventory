@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Typewriter Problem</string>
+    <string name="app_name">My Typewriter Problem</string>
 
     <!--Typewriters-->
     <string name="kolibri_groma">Kolibri Groma</string>
