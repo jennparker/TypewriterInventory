@@ -37,18 +37,10 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
-        when (item.groupId) {
-            R.id.search_group -> {
-                val searchActivityIntent = Intent(this, SearchActivity::class.java)
-                searchActivityIntent.putExtra(Constants.NAVIGATION_ID, item.itemId)
-                startActivity(searchActivityIntent)
-            }
-            else -> {
-                val typewriterDetailActivityIntent = Intent(this, TypewriterDetailActivity::class.java)
-                typewriterDetailActivityIntent.putExtra(Constants.NAVIGATION_ID, item.itemId)
-                startActivity(typewriterDetailActivityIntent)
-            }
-        }
+
+        val typewriterDetailActivityIntent = Intent(this, TypewriterDetailActivity::class.java)
+        typewriterDetailActivityIntent.putExtra(Constants.NAVIGATION_ID, item.itemId)
+        startActivity(typewriterDetailActivityIntent)
 
         drawer_layout.closeDrawer(GravityCompat.START)
         return true
