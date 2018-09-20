@@ -1,6 +1,9 @@
 package com.booisajerk.typewritersamples
 
 import android.content.Context
+import android.graphics.BitmapFactory
+import android.support.v4.content.ContextCompat
+import android.support.v7.graphics.Palette
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -24,6 +27,12 @@ class MachineListAdapter(private var context: Context) : RecyclerView.Adapter<Ma
         holder.itemView.machineName.text = machine.name
 
         Picasso.with(context).load(machine.getImageResourceId(context)).into(holder.itemView.machineImage)
+
+        val photo = BitmapFactory.decodeResource(context.resources, machine.getImageResourceId(context))
+        Palette.from(photo).generate { palette ->
+            val bgColor = palette?.getDarkMutedColor(ContextCompat.getColor(context, android.R.color.black))
+            bgColor?.let { holder.itemView.machineNameHolder.setBackgroundColor(it) }
+        }
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
