@@ -51,5 +51,6 @@
     <string name="splash_hint_text">Tap a typewriter key to get started</string>
     <string name="typewriter_image_content_description">image of the typewriter</string>
     <string name="typewriter_name_hint">Enter a typewriter name</string>
+    <string name="machine_image_content_description">machine image</string>
 
 </resources>

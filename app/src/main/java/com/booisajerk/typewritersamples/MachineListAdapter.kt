@@ -26,7 +26,7 @@ class MachineListAdapter(private var context: Context) : RecyclerView.Adapter<Ma
         val machine = MachineData.machineList()[position]
         holder.itemView.machineName.text = machine.name
 
-        Picasso.with(context).load(machine.getImageResourceId(context)).into(holder.itemView.machineImage)
+        Picasso.get().load(machine.getImageResourceId(context)).into(holder.itemView.machineImage)
 
         val photo = BitmapFactory.decodeResource(context.resources, machine.getImageResourceId(context))
         Palette.from(photo).generate { palette ->
